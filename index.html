@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorsa Roohbakhsh Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46bf1fae9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+<nav>
+    <img src="images/logo3.png" class="logo">
+    <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+</nav>
+    <div class="header-text">
+        <p>UI-UX Designer</p>
+        <h1>Hey, I'm D<span>orsa.</span></h1>
+        <h5>Welcome to my portfolio.</h5>
+    </div>
+    </div>
+    </div>
+    <!----------------------------about--------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="images/user.png.png">
+        </div>
+        <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Welcome to my design portfolio! I am a passionate designer with a knack for crafting engaging app and website experiences. With a keen eye for detail and a deep understanding of user-centric design principles, I strive to transform your digital vision into a visually captivating reality.<br>My design journey is fueled by creativity, innovation, and a commitment to delivering exceptional user experiences. I believe that great design is about both aesthetics and functionality, ensuring every project resonates with users and meets your business objectives.
+</p>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="Skills">
+            <ul>
+                <li><span>UI-UX</span><br>Designing Web/App Interfaces</li>
+                <li><span>Figma</span><br>Competent in wireframing, prototyping, and user journey mapping.</li>
+                <li><span>User Research</span><br>Adept at conducting user research and synthesizing feedback into design improvements.</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="Experience">
+            <ul>
+                <li><span>2021 - Present</span><br>UI/UX Design Freelancer</li>
+                </ul>
+        </div>
+        <div class="tab-contents" id="Education">
+            <ul>
+                <li><span>2023 - Present</span><br>Interaction Design | Bachelor's Degree
+                    Emily Carr University of Art + Design</li>
+                </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!-- ---------------------------------services-------------------------- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-bezier-curve"></i>
+                <h2>User Interface (UI) Design</h2>
+                <p>Crafting visually appealing and intuitive interfaces that enhance user interaction and satisfaction.</p>
+            <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-column"></i>
+                <h2>User Experience (UX) Design</h2>
+                <p>Creating seamless and meaningful user experiences through research, prototyping, and usability testing.</p>
+            <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Responsive Web Design</h2>
+                <p>Developing websites that provide optimal viewing experiences across a wide range of devices, ensuring accessibility and usability.</p>
+            <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- --------------------------------portfolio------------------------ -->
+ <div id="portfolio">
+ <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="Work-list">
+        <div class="Work">
+            <img src="images/work-1.JPG">
+        </div>
+        <div class="Work">
+            <img src="images/work-2.JPG">
+        </div>
+        <div class="Work">
+            <img src="images/work-3.JPG">
+        </div>
+    </div>
+     <a href="#" class="btn">See more</a>
+  </div>
+ </div>
+ <!------------------------------------contact------------------------------ -->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> dorsauiux@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 604-446-7828</p>
+                <div class="social-icons">
+                   <a href="https://youtube.com/@dorsaroohbakhsh?si=J133k5D4685_jn6i"><i class="fa-brands fa-square-youtube"></i></a>
+                   <a href="https://www.instagram.com/dorsauix?igsh=c29jNjFrbW5ubHlk&utm_source=qr"><i class="fa-brands fa-square-instagram"></i></a>
+                   <a href="http://linkedin.com/in/dorsa-roohbakhsh"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Dorsa Roohbakhsh-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+       for(tablink of tablinks){
+       tablink.classList.remove("active-link");
+       }
+       for(tabcontent of tabcontents){
+       tabcontent.classList.remove("active-tab");
+       }   
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+</body>
+</html>
+
